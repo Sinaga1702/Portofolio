@@ -483,7 +483,7 @@
           </div>
           <div class="max-w-2xl mx-auto">
             <form
-              action="#"
+              action="https://formspree.io/f/mojkkdqn"
               method="post"
               class="bg-white p-8 rounded-lg shadow-lg"
             >
@@ -523,12 +523,19 @@
                   required
                 ></textarea>
               </div>
+              <!-- Anti Spam -->
+              <input type="text" name="_gotcha" style="display: none" />
+
               <button
                 type="submit"
                 class="w-full bg-teal-500 text-white py-2 px-4 rounded-lg hover:bg-teal-600 transition duration-500"
               >
                 Send Message
               </button>
+              <!-- Success Massage -->
+              <p id="success-message" class="text-green-600 mt-4 hidden">
+                ✅ Message sent successfully!
+              </p>
             </form>
           </div>
         </div>
